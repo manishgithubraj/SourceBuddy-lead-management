@@ -225,7 +225,132 @@
         "297",
         "298",
         "299",
-        "300"
+        "300",
+        "301",
+        "302",
+        "303",
+        "304",
+        "305",
+        "306",
+        "307",
+        "308",
+        "309",
+        "310",
+        "311",
+        "312",
+        "313",
+        "314",
+        "315",
+        "316",
+        "317",
+        "318",
+        "319",
+        "320",
+        "321",
+        "322",
+        "323",
+        "324",
+        "325",
+        "326",
+        "327",
+        "328",
+        "329",
+        "330",
+        "331",
+        "332",
+        "333",
+        "334",
+        "335",
+        "336",
+        "337",
+        "338",
+        "339",
+        "340",
+        "341",
+        "342",
+        "343",
+        "344",
+        "345",
+        "346",
+        "347",
+        "348",
+        "349",
+        "350",
+        "351",
+        "352",
+        "353",
+        "354",
+        "355",
+        "356",
+        "357",
+        "358",
+        "359",
+        "360",
+        "361",
+        "362",
+        "363",
+        "364",
+        "365",
+        "366",
+        "367",
+        "368",
+        "369",
+        "370",
+        "371",
+        "372",
+        "373",
+        "374",
+        "375",
+        "376",
+        "377",
+        "378",
+        "379",
+        "380",
+        "381",
+        "382",
+        "383",
+        "384",
+        "385",
+        "386",
+        "387",
+        "388",
+        "389",
+        "390",
+        "391",
+        "392",
+        "393",
+        "394",
+        "395",
+        "396",
+        "397",
+        "398",
+        "399",
+        "400",
+        "402",
+        "404",
+        "405",
+        "406",
+        "407",
+        "408",
+        "411",
+        "414",
+        "415",
+        "416",
+        "417",
+        "420",
+        "421",
+        "422",
+        "423",
+        "424",
+        "425",
+        "427",
+        "428",
+        "429",
+        "430",
+        "431",
+        "432",
+        "433",
+        "434"
       ]
     },
     {
@@ -335,7 +460,142 @@
         "190",
         "191",
         "192",
-        "194"
+        "194",
+        "533",
+        "709",
+        "710",
+        "711",
+        "712",
+        "719",
+        "724",
+        "725",
+        "726",
+        "734",
+        "743",
+        "744",
+        "745",
+        "748",
+        "751",
+        "754",
+        "756",
+        "757",
+        "758",
+        "760",
+        "761",
+        "763",
+        "768",
+        "770",
+        "773"
+      ]
+    },
+    {
+      "id": "f0653d51-d035-4bce-94ee-5d6934a883da",
+      "username": "user10",
+      "name": "Manish Raj",
+      "role": "user",
+      "passwordHash": "b366eb10656bbff3550b545df41d7a74852b76dae9016c618c7ddc9594d5de7719ce8255e77e6730efcfdcee5692add5e626f8d8bb3b71960701577d7902a164",
+      "salt": "aa373d49300ee31698d51b76b327373e",
+      "companyIds": [
+        "401",
+        "403",
+        "409",
+        "410",
+        "412",
+        "413",
+        "418",
+        "419",
+        "426",
+        "435",
+        "436",
+        "437",
+        "438",
+        "445",
+        "446",
+        "449",
+        "450",
+        "460",
+        "461",
+        "462",
+        "464",
+        "466",
+        "467",
+        "471",
+        "474",
+        "476",
+        "477",
+        "479",
+        "480",
+        "483",
+        "485",
+        "488",
+        "494",
+        "497",
+        "499",
+        "500",
+        "506",
+        "508",
+        "521",
+        "522",
+        "523",
+        "529",
+        "537",
+        "541",
+        "546",
+        "549",
+        "554",
+        "557",
+        "558",
+        "559",
+        "560",
+        "562",
+        "563",
+        "565",
+        "567",
+        "568",
+        "573",
+        "574",
+        "576",
+        "579",
+        "583",
+        "587",
+        "591",
+        "592",
+        "593",
+        "594",
+        "596",
+        "597",
+        "598",
+        "605",
+        "607",
+        "608",
+        "616",
+        "622",
+        "626",
+        "627",
+        "639",
+        "643",
+        "647",
+        "655",
+        "656",
+        "658",
+        "660",
+        "665",
+        "667",
+        "668",
+        "670",
+        "671",
+        "673",
+        "674",
+        "675",
+        "676",
+        "681",
+        "682",
+        "687",
+        "699",
+        "700",
+        "703",
+        "704",
+        "705"
       ]
     }
   ],
@@ -8464,7 +8724,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 302,
@@ -8490,7 +8751,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 303,
@@ -8516,7 +8778,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 304,
@@ -8542,7 +8805,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 305,
@@ -8568,7 +8832,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 306,
@@ -8594,7 +8859,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 307,
@@ -8620,7 +8886,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 308,
@@ -8646,7 +8913,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 309,
@@ -8672,7 +8940,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 310,
@@ -8698,7 +8967,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 311,
@@ -8724,7 +8994,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 312,
@@ -8750,7 +9021,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 313,
@@ -8776,7 +9048,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 314,
@@ -8802,7 +9075,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 315,
@@ -8828,7 +9102,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 316,
@@ -8854,7 +9129,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "0",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 317,
@@ -8880,7 +9156,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 318,
@@ -8906,7 +9183,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 319,
@@ -8932,7 +9210,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 320,
@@ -8958,7 +9237,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "0",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 321,
@@ -8984,7 +9264,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 322,
@@ -9010,7 +9291,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 323,
@@ -9036,7 +9318,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 324,
@@ -9062,7 +9345,8 @@
       "Name": "S.marimuthu.",
       "Email.1": "",
       "Number": "04222901254",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 325,
@@ -9088,7 +9372,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 326,
@@ -9114,7 +9399,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "0",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 327,
@@ -9140,7 +9426,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 328,
@@ -9166,7 +9453,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 329,
@@ -9192,7 +9480,8 @@
       "Name": "",
       "Email.1": "corporate.affairs@jindalgroup.com",
       "Number": "9199999341292",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 330,
@@ -9218,7 +9507,8 @@
       "Name": "Mr Mahesh Chand Kala",
       "Email.1": "bipin@jupiterelectronics.co.in",
       "Number": "91981129428",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 331,
@@ -9244,7 +9534,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 332,
@@ -9270,7 +9561,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 333,
@@ -9296,7 +9588,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 334,
@@ -9322,7 +9615,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 335,
@@ -9348,7 +9642,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 336,
@@ -9374,7 +9669,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 337,
@@ -9400,7 +9696,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 338,
@@ -9426,7 +9723,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 339,
@@ -9452,7 +9750,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 340,
@@ -9478,7 +9777,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 341,
@@ -9504,7 +9804,8 @@
       "Name": "Mr Iqbal",
       "Email.1": "trivenugopal.kadali@kaumodakitech.com",
       "Number": "9179898963132",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 342,
@@ -9530,7 +9831,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 343,
@@ -9556,7 +9858,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 344,
@@ -9582,7 +9885,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 345,
@@ -9608,7 +9912,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "9243195070",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 346,
@@ -9634,7 +9939,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 347,
@@ -9660,7 +9966,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 348,
@@ -9686,7 +9993,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 349,
@@ -9712,7 +10020,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 350,
@@ -9738,7 +10047,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 351,
@@ -9764,7 +10074,8 @@
       "Name": "Mr Ankur Shah",
       "Email.1": "corporate@krasnydefence.com",
       "Number": "9193254152",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 352,
@@ -9790,7 +10101,8 @@
       "Name": "MrG Srinivasa Rao",
       "Email.1": "gvasu@kunaero.com",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 353,
@@ -9816,7 +10128,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 354,
@@ -9842,7 +10155,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 355,
@@ -9868,7 +10182,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 356,
@@ -9894,7 +10209,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "0",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 357,
@@ -9920,7 +10236,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 358,
@@ -9946,7 +10263,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 359,
@@ -9972,7 +10290,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 360,
@@ -9998,7 +10317,8 @@
       "Name": "Mr Ranga Reddy",
       "Email.1": "marketing@legendtechnologies.co.in",
       "Number": "9197487598",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 361,
@@ -10024,7 +10344,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "08026658823",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 362,
@@ -10050,7 +10371,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 363,
@@ -10076,7 +10398,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 364,
@@ -10102,7 +10425,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 365,
@@ -10128,7 +10452,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 366,
@@ -10154,7 +10479,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 367,
@@ -10180,7 +10506,8 @@
       "Name": "Mr Anurag Lohia",
       "Email.1": "anurag.lohia@lohiagroup.com",
       "Number": "9198484369992",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 368,
@@ -10206,7 +10533,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 369,
@@ -10232,7 +10560,8 @@
       "Name": "N.R.Harish",
       "Email.1": "",
       "Number": "8310455056",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 370,
@@ -10258,7 +10587,8 @@
       "Name": "Hemalatha",
       "Email.1": "",
       "Number": "7353150147",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 371,
@@ -10284,7 +10614,8 @@
       "Name": "Michelle Tan",
       "Email.1": "jesspeng@luminasystems.net",
       "Number": "6565787145",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 372,
@@ -10310,7 +10641,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 373,
@@ -10336,7 +10668,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 374,
@@ -10362,7 +10695,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 375,
@@ -10388,7 +10722,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 376,
@@ -10414,7 +10749,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 377,
@@ -10440,7 +10776,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 378,
@@ -10466,7 +10803,8 @@
       "Name": "Mr Kumar Mall",
       "Email.1": "nfo@makcontrols.com",
       "Number": "919894298885",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 379,
@@ -10492,7 +10830,8 @@
       "Name": "Muskan",
       "Email.1": "tl@mangosemiconductors.com",
       "Number": "9289134712",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 380,
@@ -10518,7 +10857,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 381,
@@ -10544,7 +10884,8 @@
       "Name": "HENDRIX",
       "Email.1": "",
       "Number": "60125191326",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 382,
@@ -10570,7 +10911,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 383,
@@ -10596,7 +10938,8 @@
       "Name": "",
       "Email.1": "bharat.malkani@maxaerospace.com",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 384,
@@ -10622,7 +10965,8 @@
       "Name": "",
       "Email.1": "ramshankar.cs@maxbytetech.com",
       "Number": "91827516387",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 385,
@@ -10648,7 +10992,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 386,
@@ -10674,7 +11019,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 387,
@@ -10700,7 +11046,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 388,
@@ -10726,7 +11073,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 389,
@@ -10752,7 +11100,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 390,
@@ -10778,7 +11127,8 @@
       "Name": "Mr Ashok Sundar",
       "Email.1": "sales@merlinhawk.com",
       "Number": "918424141",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 391,
@@ -10804,7 +11154,8 @@
       "Name": "",
       "Email.1": "gps@mgseating.com",
       "Number": "91954535511",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 392,
@@ -10830,7 +11181,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 393,
@@ -10856,7 +11208,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 394,
@@ -10882,7 +11235,8 @@
       "Name": "Mr Sahgal",
       "Email.1": "vikramsahgal@microninst.com",
       "Number": "919872699944",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 395,
@@ -10908,7 +11262,8 @@
       "Name": "Patrick Scalzo",
       "Email.1": "",
       "Number": "7722883176",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 396,
@@ -10934,7 +11289,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 397,
@@ -10960,7 +11316,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 398,
@@ -10986,7 +11343,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 399,
@@ -11012,7 +11370,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 400,
@@ -11038,7 +11397,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 401,
@@ -11064,7 +11424,8 @@
       "Name": "gcolemere",
       "Email.1": "arendell@mmwavetech.com",
       "Number": "0",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 402,
@@ -11090,7 +11451,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 403,
@@ -11116,7 +11478,8 @@
       "Name": "Mr Nilesh S Vadhar",
       "Email.1": "ilesh@miracle.net.in",
       "Number": "919845546251",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 404,
@@ -11142,7 +11505,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 405,
@@ -11168,7 +11532,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 406,
@@ -11194,7 +11559,8 @@
       "Name": "Sourabha",
       "Email.1": "mohammed.vaseem@mouser.com",
       "Number": "08042650000",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 407,
@@ -11220,7 +11586,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 408,
@@ -11246,7 +11613,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 409,
@@ -11272,7 +11640,8 @@
       "Name": "",
       "Email.1": "angad.atwal@msa-global.com",
       "Number": "91981193519",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 410,
@@ -11298,7 +11667,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 411,
@@ -11324,7 +11694,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 412,
@@ -11350,7 +11721,8 @@
       "Name": "Srinivasa TV",
       "Email.1": "purchase@naabhya.com",
       "Number": "7022010878",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 413,
@@ -11376,7 +11748,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 414,
@@ -11402,7 +11775,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 415,
@@ -11428,7 +11802,8 @@
       "Name": "Prashanth katakam",
       "Email.1": "",
       "Number": "9611321878",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 416,
@@ -11454,7 +11829,8 @@
       "Name": "Mr Samir Neogi",
       "Email.1": "bhaskar.kanungo@in.navalgroup.Com",
       "Number": "9187689359",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 417,
@@ -11480,7 +11856,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 418,
@@ -11506,7 +11883,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 419,
@@ -11532,7 +11910,8 @@
       "Name": "",
       "Email.1": "info@neopower.co.in",
       "Number": "91882811148",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 420,
@@ -11558,7 +11937,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 421,
@@ -11584,7 +11964,8 @@
       "Name": "Joe Lee",
       "Email.1": "serena@neteon.net",
       "Number": "18889083330",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 422,
@@ -11610,7 +11991,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 423,
@@ -11636,7 +12018,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 424,
@@ -11662,7 +12045,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 425,
@@ -11688,7 +12072,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 426,
@@ -11714,7 +12099,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 427,
@@ -11740,7 +12126,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 428,
@@ -11766,7 +12153,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 429,
@@ -11792,7 +12180,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 430,
@@ -11818,7 +12207,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 431,
@@ -11844,7 +12234,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 432,
@@ -11870,7 +12261,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 433,
@@ -11896,7 +12288,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 434,
@@ -11922,7 +12315,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "95f7b374-b1e5-4860-b9b1-3bec305a582d"
     },
     {
       "#": 435,
@@ -11948,7 +12342,8 @@
       "Name": "",
       "Email.1": "sp.tiwari@nicomatic.in",
       "Number": "9199122867",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 436,
@@ -11974,7 +12369,8 @@
       "Name": "Preethi Puttaswamy",
       "Email.1": "k.devaraju@nicomatic.in",
       "Number": "7760119120",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 437,
@@ -12000,7 +12396,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 438,
@@ -12026,7 +12423,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 439,
@@ -12208,7 +12606,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 446,
@@ -12234,7 +12633,8 @@
       "Name": "",
       "Email.1": "hemantjalan@nucon.net",
       "Number": "91984912432",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 447,
@@ -12312,7 +12712,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 450,
@@ -12338,7 +12739,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "0",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 451,
@@ -12598,7 +13000,8 @@
       "Name": "",
       "Email.1": "business@parasdefence.com",
       "Number": "9198695222222",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 461,
@@ -12624,7 +13027,8 @@
       "Name": "Radhika Verma",
       "Email.1": "",
       "Number": "919871231357",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 462,
@@ -12650,7 +13054,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 463,
@@ -12702,7 +13107,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 465,
@@ -12754,7 +13160,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 467,
@@ -12780,7 +13187,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 468,
@@ -12884,7 +13292,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "0",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 472,
@@ -12962,7 +13371,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 475,
@@ -13014,7 +13424,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 477,
@@ -13040,7 +13451,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 478,
@@ -13092,7 +13504,8 @@
       "Name": "Mallesh",
       "Email.1": "",
       "Number": "914027120283",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 480,
@@ -13118,7 +13531,8 @@
       "Name": "",
       "Email.1": "ashok.kanodia@pel-india.com",
       "Number": "91991383151",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 481,
@@ -13196,7 +13610,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 484,
@@ -13248,7 +13663,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 486,
@@ -13326,7 +13742,8 @@
       "Name": "Pankaj Agarwal",
       "Email.1": "",
       "Number": "919891346111",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 489,
@@ -13482,7 +13899,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 495,
@@ -13560,7 +13978,8 @@
       "Name": "Shekar.R",
       "Email.1": "",
       "Number": "9886557798",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 498,
@@ -13612,7 +14031,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 500,
@@ -13638,7 +14058,8 @@
       "Name": "MsV Anuradha",
       "Email.1": "info.b@rangsons-schuster.com",
       "Number": "9198457388",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 501,
@@ -13794,7 +14215,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 507,
@@ -13846,7 +14268,8 @@
       "Name": "Payal Chauhan ",
       "Email.1": "",
       "Number": "7082105601",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 509,
@@ -14184,7 +14607,8 @@
       "Name": "Chakrapanni",
       "Email.1": "girish@rotaryconnectors.com",
       "Number": "7353818181",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 522,
@@ -14210,7 +14634,8 @@
       "Name": "",
       "Email.1": "sales@rotaryconnectors.com",
       "Number": "91916724844",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 523,
@@ -14236,7 +14661,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 524,
@@ -14392,7 +14818,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 530,
@@ -14496,7 +14923,8 @@
       "Name": "Nagaraj S Aithal",
       "Email.1": "",
       "Number": "8605890055",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "1f77d83a-efb5-4019-b6cc-d35508e1c564"
     },
     {
       "#": 534,
@@ -14600,7 +15028,8 @@
       "Name": "Mr Aditya Arora",
       "Email.1": "aarora@safecontechnologies.com",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 538,
@@ -14704,7 +15133,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 542,
@@ -14834,7 +15264,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 547,
@@ -14912,7 +15343,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 550,
@@ -15042,7 +15474,8 @@
       "Name": "Sachin",
       "Email.1": "",
       "Number": "9535349534",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 555,
@@ -15120,7 +15553,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 558,
@@ -15146,7 +15580,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 559,
@@ -15172,7 +15607,8 @@
       "Name": "Eileen McNaughton",
       "Email.1": "",
       "Number": "7178434240",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 560,
@@ -15198,7 +15634,8 @@
       "Name": "MrR Gopalan",
       "Email.1": "info@serteltelser.com",
       "Number": "91938133455",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 561,
@@ -15250,7 +15687,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "914846614329",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 563,
@@ -15276,7 +15714,8 @@
       "Name": "",
       "Email.1": "avinash.thakur@nestgroup.net",
       "Number": "9198954324",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 564,
@@ -15328,7 +15767,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 566,
@@ -15380,7 +15820,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 568,
@@ -15406,7 +15847,8 @@
       "Name": "Oliv",
       "Email.1": "",
       "Number": "6596696137",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 569,
@@ -15536,7 +15978,8 @@
       "Name": "",
       "Email.1": "cmd@shreeramaerospace.com",
       "Number": "919898558",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 574,
@@ -15562,7 +16005,8 @@
       "Name": "Sathya",
       "Email.1": "",
       "Number": "9845269008",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 575,
@@ -15614,7 +16058,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 577,
@@ -15692,7 +16137,8 @@
       "Name": "Karthikeyan",
       "Email.1": "ajay.shirude@sicame.in",
       "Number": "7358379638",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 580,
@@ -15796,7 +16242,8 @@
       "Name": "Mr Kunal Sikka",
       "Email.1": "kunal.sikka@sikaglobal.com",
       "Number": "9198453679",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 584,
@@ -15900,7 +16347,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 588,
@@ -16004,7 +16452,8 @@
       "Name": "Mr Milton Kuruppath",
       "Email.1": "milton@smec.in",
       "Number": "919847477142",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 592,
@@ -16030,7 +16479,8 @@
       "Name": "Mayur Naik",
       "Email.1": "",
       "Number": "0202747118892256131019822080718",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 593,
@@ -16056,7 +16506,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 594,
@@ -16082,7 +16533,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "0",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 595,
@@ -16134,7 +16586,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 597,
@@ -16160,7 +16613,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 598,
@@ -16186,7 +16640,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 599,
@@ -16368,7 +16823,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 606,
@@ -16420,7 +16876,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 608,
@@ -16446,7 +16903,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 609,
@@ -16654,7 +17112,8 @@
       "Name": "Mr Yogendra Rana",
       "Email.1": "kamal.dhiman@staraerospacepltd.com",
       "Number": "91983764489",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 617,
@@ -16810,7 +17269,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 623,
@@ -16914,7 +17374,8 @@
       "Name": "",
       "Email.1": "info@subramtechnologies.com",
       "Number": "919717834",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 627,
@@ -16940,7 +17401,8 @@
       "Name": "Divya",
       "Email.1": "",
       "Number": "8122097505",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 628,
@@ -17252,7 +17714,8 @@
       "Name": "",
       "Email.1": "info@symtronicsindia.com",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 640,
@@ -17356,7 +17819,8 @@
       "Name": "Mr Kumar Bansal IAS",
       "Email.1": "radha.sharma@talsecure.com",
       "Number": "91875583969",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 644,
@@ -17460,7 +17924,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 648,
@@ -17668,7 +18133,8 @@
       "Name": "Mr Pragadish",
       "Email.1": "santhosh@aero36.co.in",
       "Number": "919962458751",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 656,
@@ -17694,7 +18160,8 @@
       "Name": "Mr Pankaj Bhandari",
       "Email.1": "drs@sIntech.com",
       "Number": "91984537422",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 657,
@@ -17746,7 +18213,8 @@
       "Name": "Sunitha",
       "Email.1": "a.b.ravindranath@teknic-euchner.co.in",
       "Number": "8951500456",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 659,
@@ -17798,7 +18266,8 @@
       "Name": "Alexandra Naumov",
       "Email.1": "rajiv@teldor.com",
       "Number": "972526460079",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 661,
@@ -17928,7 +18397,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 666,
@@ -17980,7 +18450,8 @@
       "Name": "Mr Bernard Raja",
       "Email.1": "sales@throttle.aero",
       "Number": "91984562127",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 668,
@@ -18006,7 +18477,8 @@
       "Name": "Shakeel H",
       "Email.1": "",
       "Number": "8861598882",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 669,
@@ -18058,7 +18530,8 @@
       "Name": "Rajeev Rai",
       "Email.1": "",
       "Number": "7376701598",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 671,
@@ -18084,7 +18557,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 672,
@@ -18136,7 +18610,8 @@
       "Name": "RACHIN BASI",
       "Email.1": "",
       "Number": "8105961537",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 674,
@@ -18162,7 +18637,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 675,
@@ -18188,7 +18664,8 @@
       "Name": "",
       "Email.1": "srvenkatesan@transvahan.com",
       "Number": "9199834599",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 676,
@@ -18214,7 +18691,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 677,
@@ -18344,7 +18822,8 @@
       "Name": "",
       "Email.1": "contact@tungasystems.com",
       "Number": "919849758",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 682,
@@ -18370,7 +18849,8 @@
       "Name": "Nagarathna",
       "Email.1": "krupashankar@turboindia.co.in",
       "Number": "9620184183",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 683,
@@ -18500,7 +18980,8 @@
       "Name": "",
       "Email.1": "suchitsharma_27@yahoo.co.in",
       "Number": "919634377728",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 688,
@@ -18812,7 +19293,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 700,
@@ -18838,7 +19320,8 @@
       "Name": "Mr Venkata Ranga",
       "Email.1": "venkata.ranga@valdelat.com",
       "Number": "91998814566",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 701,
@@ -18916,7 +19399,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 704,
@@ -18942,7 +19426,8 @@
       "Name": "Mr Phaneendra Sarma Gadiyaram",
       "Email.1": "sales@vemtechnologies.com",
       "Number": "9198853388",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 705,
@@ -18968,7 +19453,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "f0653d51-d035-4bce-94ee-5d6934a883da"
     },
     {
       "#": 706,
@@ -19072,7 +19558,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "1f77d83a-efb5-4019-b6cc-d35508e1c564"
     },
     {
       "#": 710,
@@ -19098,7 +19585,8 @@
       "Name": "Mr Gokul Anandayuvaraj",
       "Email.1": "frontdesk@vinveli.in",
       "Number": "491977656565",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "1f77d83a-efb5-4019-b6cc-d35508e1c564"
     },
     {
       "#": 711,
@@ -19124,7 +19612,8 @@
       "Name": "Mr Manoj Kumar",
       "Email.1": "manojkumar@vinyasit.net",
       "Number": "9196688192",
-      "Unnamed: 27": "91 88261 66033"
+      "Unnamed: 27": "91 88261 66033",
+      "assigned_user_id": "1f77d83a-efb5-4019-b6cc-d35508e1c564"
     },
     {
       "#": 712,
@@ -19150,7 +19639,8 @@
       "Name": "Sudharsan V.",
       "Email.1": "",
       "Number": "0",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "1f77d83a-efb5-4019-b6cc-d35508e1c564"
     },
     {
       "#": 713,
@@ -19332,7 +19822,8 @@
       "Name": "",
       "Email.1": "vp-sales_mkt@vistaconsoles.in",
       "Number": "918451828439",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "1f77d83a-efb5-4019-b6cc-d35508e1c564"
     },
     {
       "#": 720,
@@ -19462,7 +19953,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "0",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "1f77d83a-efb5-4019-b6cc-d35508e1c564"
     },
     {
       "#": 725,
@@ -19488,7 +19980,8 @@
       "Name": "Mahalakshmi H",
       "Email.1": "",
       "Number": "08040940775",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "1f77d83a-efb5-4019-b6cc-d35508e1c564"
     },
     {
       "#": 726,
@@ -19514,7 +20007,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "1f77d83a-efb5-4019-b6cc-d35508e1c564"
     },
     {
       "#": 727,
@@ -19722,7 +20216,8 @@
       "Name": "",
       "Email.1": "mohit@werywin.com",
       "Number": "917233262",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "1f77d83a-efb5-4019-b6cc-d35508e1c564"
     },
     {
       "#": 735,
@@ -19956,7 +20451,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "1f77d83a-efb5-4019-b6cc-d35508e1c564"
     },
     {
       "#": 744,
@@ -19982,7 +20478,8 @@
       "Name": "Angel wang",
       "Email.1": "",
       "Number": "886034527666226",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "1f77d83a-efb5-4019-b6cc-d35508e1c564"
     },
     {
       "#": 745,
@@ -20008,7 +20505,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "1f77d83a-efb5-4019-b6cc-d35508e1c564"
     },
     {
       "#": 746,
@@ -20086,7 +20584,8 @@
       "Name": "MrS Arunachalam",
       "Email.1": "arunachalam@highenergy.co.in",
       "Number": "9171116516",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "1f77d83a-efb5-4019-b6cc-d35508e1c564"
     },
     {
       "#": 749,
@@ -20164,7 +20663,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "1f77d83a-efb5-4019-b6cc-d35508e1c564"
     },
     {
       "#": 752,
@@ -20242,7 +20742,8 @@
       "Name": "",
       "Email.1": "marketing@accurateic.in",
       "Number": "91937147575",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "1f77d83a-efb5-4019-b6cc-d35508e1c564"
     },
     {
       "#": 755,
@@ -20294,7 +20795,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "1f77d83a-efb5-4019-b6cc-d35508e1c564"
     },
     {
       "#": 757,
@@ -20320,7 +20822,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "0",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "1f77d83a-efb5-4019-b6cc-d35508e1c564"
     },
     {
       "#": 758,
@@ -20346,7 +20849,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "1f77d83a-efb5-4019-b6cc-d35508e1c564"
     },
     {
       "#": 759,
@@ -20398,7 +20902,8 @@
       "Name": "MALLIKARJUNA ",
       "Email.1": "",
       "Number": "7411661035",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "1f77d83a-efb5-4019-b6cc-d35508e1c564"
     },
     {
       "#": 761,
@@ -20424,7 +20929,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "1f77d83a-efb5-4019-b6cc-d35508e1c564"
     },
     {
       "#": 762,
@@ -20476,7 +20982,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "1f77d83a-efb5-4019-b6cc-d35508e1c564"
     },
     {
       "#": 764,
@@ -20606,7 +21113,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "1f77d83a-efb5-4019-b6cc-d35508e1c564"
     },
     {
       "#": 769,
@@ -20658,7 +21166,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "1f77d83a-efb5-4019-b6cc-d35508e1c564"
     },
     {
       "#": 771,
@@ -20736,7 +21245,8 @@
       "Name": "",
       "Email.1": "",
       "Number": "",
-      "Unnamed: 27": ""
+      "Unnamed: 27": "",
+      "assigned_user_id": "1f77d83a-efb5-4019-b6cc-d35508e1c564"
     },
     {
       "#": 774,

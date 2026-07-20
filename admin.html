@@ -287,6 +287,58 @@
       margin-top: 12px;
     }
 
+    .assignment-overview {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .overview-card {
+      min-height: 92px;
+      padding: 14px;
+      border: 1px solid rgba(93, 214, 255, .14);
+      border-radius: 10px;
+      background: rgba(10, 24, 40, .72);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .overview-card span {
+      color: var(--muted);
+      font: 11px 'DM Mono';
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .overview-card strong {
+      font-size: 24px;
+      color: #5DD6FF;
+      line-height: 1;
+    }
+
+    .overview-card-wide { grid-column: span 1; }
+
+    .overview-users {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      max-height: 96px;
+      overflow: auto;
+    }
+
+    .overview-user-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      font: 12px 'Space Grotesk', sans-serif;
+      color: var(--text);
+    }
+
+    .overview-user-row strong { font-size: 12px; color: var(--amber); }
+
     .assignment-filters {
       display: flex;
       flex-wrap: wrap;
@@ -410,6 +462,10 @@
         flex-direction: column;
       }
 
+      .assignment-overview {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
       .assignment-actions .btn-primary {
         align-self: flex-start;
       }
@@ -499,7 +555,14 @@
           <h2 id="assignmentTitle">Select a user</h2>
 
           <div class="assignment-toolbar">
-            <div class="assignment-actions">
+          <div class="assignment-overview" id="assignmentOverview">
+            <div class="overview-card"><span>Total</span><strong id="overviewTotal">0</strong></div>
+            <div class="overview-card"><span>Assigned</span><strong id="overviewAssigned">0</strong></div>
+            <div class="overview-card"><span>Unassigned</span><strong id="overviewUnassigned">0</strong></div>
+            <div class="overview-card overview-card-wide"><span>User-wise</span><div id="overviewUsers" class="overview-users"></div></div>
+          </div>
+
+          <div class="assignment-actions">
               <label style="flex:1;min-width:240px">SEARCH COMPANIES
                 <input id="companySearch" placeholder="Company name…">
               </label>
@@ -543,6 +606,18 @@
                   <option value="no">No</option>
                 </select>
               </label>
+              <label style="min-width:150px">ASSIGNMENT STATUS
+                <select id="assignmentStatusFilter">
+                  <option value="all">All</option>
+                  <option value="assigned">Assigned</option>
+                  <option value="unassigned">Unassigned</option>
+                </select>
+              </label>
+              <label style="min-width:180px">ASSIGNED USER
+                <select id="assignmentUserFilter">
+                  <option value="all">All users</option>
+                </select>
+              </label>
               <label style="min-width:180px">ASSIGNMENT VIEW
                 <select id="assignmentViewFilter">
                   <option value="available">Available Companies</option>
@@ -584,6 +659,20 @@
     // State
     // ---------------------------------------------------------------
     let me, users = [], companies = [], selected = null, pendingDeletion = null;
+
+    function renderAssignmentOverview() {
+      const total = companies.length;
+      const assigned = companies.filter(company => company.assigned_user_id).length;
+      const unassigned = total - assigned;
+      $('overviewTotal').textContent = total;
+      $('overviewAssigned').textContent = assigned;
+      $('overviewUnassigned').textContent = unassigned;
+      const rows = users.filter(user => user.role === 'user').map(user => {
+        const count = companies.filter(company => company.assigned_user_id === user.id).length;
+        return `<div class="overview-user-row"><span>${esc(user.name)}</span><strong>${count}</strong></div>`;
+      }).join('');
+      $('overviewUsers').innerHTML = rows || '<div class="overview-user-row"><span>No users yet</span><strong>0</strong></div>';
+    }
 
     function normalizeBoolean(value) {
       const text = String(value ?? '').trim().toLowerCase();
@@ -630,6 +719,7 @@
 
         renderUsers();
         populateAssignmentUsers();
+        renderAssignmentOverview();
 
         const adminCount = users.filter(u => u.role === 'admin').length;
         $('adminNote').textContent = adminCount >= 2
@@ -666,6 +756,7 @@
     function populateAssignmentUsers() {
       const options = users.filter(user => user.role === 'user').map(user => `<option value="${esc(user.id)}">${esc(user.name)} (${esc(user.username)})</option>`).join('');
       $('assignmentTargetUser').innerHTML = `<option value="">Select user</option>${options}`;
+      $('assignmentUserFilter').innerHTML = `<option value="all">All users</option>${options}`;
     }
 
     window.choose = id => {
@@ -687,6 +778,8 @@
       const sourceBuddy = $('sourceBuddyFilter').value;
       const assignmentView = $('assignmentViewFilter').value;
       const assignmentTargetId = $('assignmentTargetUser').value;
+      const assignmentStatus = $('assignmentStatusFilter').value;
+      const assignmentUserFilterValue = $('assignmentUserFilter').value;
       const viewSize = Number($('companyViewSize').value) || 50;
 
       const filtered = companies.filter(c => {
@@ -698,6 +791,9 @@
         if (sourceBuddy !== 'all' && normalizeBoolean(c['Source Buddy']) !== sourceBuddy) return false;
         if (assignmentView === 'available' && assignedUserId) return false;
         if (assignmentView === 'assigned' && assignedUserId !== assignmentTargetId) return false;
+        if (assignmentStatus === 'assigned' && !assignedUserId) return false;
+        if (assignmentStatus === 'unassigned' && assignedUserId) return false;
+        if (assignmentUserFilterValue !== 'all' && assignedUserId !== assignmentUserFilterValue) return false;
         return true;
       });
 
@@ -712,7 +808,7 @@
       `).join('') || '<small>No matching companies.</small>';
     }
 
-    ['companySearch', 'manufacturerFilter', 'distributorFilter', 'sourceBuddyFilter', 'companyViewSize', 'assignmentViewFilter', 'assignmentTargetUser'].forEach(id => {
+    ['companySearch', 'manufacturerFilter', 'distributorFilter', 'sourceBuddyFilter', 'companyViewSize', 'assignmentViewFilter', 'assignmentTargetUser', 'assignmentStatusFilter', 'assignmentUserFilter'].forEach(id => {
       $(id).addEventListener('input', renderCompanies);
       $(id).addEventListener('change', renderCompanies);
     });
@@ -756,6 +852,7 @@
         });
         selected = users.find(user => user.id === selected.id) || selected;
         renderUsers();
+        renderAssignmentOverview();
         renderCompanies();
       } catch (e) {
         $('assignError').textContent = e.message;
@@ -847,7 +944,8 @@
     // Logout
     // ---------------------------------------------------------------
     $('logout').onclick = async () => {
-      await fetch('/api/logout', { method: 'POST' });
+      await fetch('/api/logout', { method: 'POST', credentials: 'same-origin' });
+      history.replaceState(null, '', 'login-new.html');
       location.replace('login-new.html');
     };
 

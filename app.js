@@ -235,12 +235,15 @@ function updateSortUI(){
 
 function renderTable(){
     tableBody.innerHTML="";
+    const isAdmin=currentUser?.role==="admin";
+    document.querySelectorAll(".assigned-to-col").forEach(el=>el.hidden=!isAdmin);
     const effectiveRows=rowsPerPage===Infinity?Math.max(filteredCompanies.length,1):rowsPerPage;
     const start=(currentPage-1)*effectiveRows, pageData=filteredCompanies.slice(start,start+effectiveRows);
     pageData.forEach(c=>{
         const id=c["#"], tr=document.createElement("tr"); if(selectedIds.has(id))tr.classList.add("selected");
         const assignedLabel = c.assigned_user_id ? (usersById.get(c.assigned_user_id)?.name || 'Assigned') : 'Unassigned';
-        tr.innerHTML=`<td class="checkbox-col"><input type="checkbox" data-id="${escapeHtml(id)}" ${selectedIds.has(id)?"checked":""}></td><td>${escapeHtml(id)}</td><td class="company">${escapeHtml(c["Company Name"])}</td><td>${safeLink(website(c))}</td><td>${badge(c["Manufacturer"])}</td><td>${badge(c["Distributor"])}</td><td>${badge(c["Source Buddy"])}</td><td>${escapeHtml(assignedLabel)}</td><td>${escapeHtml(primaryName(c))}</td><td>${escapeHtml(primaryEmail(c))}</td><td>${escapeHtml(primaryPhone(c))}</td><td><button class="row-mail-btn ${mailStatus(c)==="sent"?"sent":""}" data-mail-id="${escapeHtml(id)}" ${!isReadyToMail(c)&&mailStatus(c)!=="sent"?"disabled":""}>${mailStatusBadge(c)}</button></td>`;
+        const assignedColumn=isAdmin?`<td class="assigned-to-col">${escapeHtml(assignedLabel)}</td>`:"";
+        tr.innerHTML=`<td class="checkbox-col"><input type="checkbox" data-id="${escapeHtml(id)}" ${selectedIds.has(id)?"checked":""}></td><td>${escapeHtml(id)}</td><td class="company">${escapeHtml(c["Company Name"])}</td><td>${safeLink(website(c))}</td><td>${badge(c["Manufacturer"])}</td><td>${badge(c["Distributor"])}</td><td>${badge(c["Source Buddy"])}</td>${assignedColumn}<td>${escapeHtml(primaryName(c))}</td><td>${escapeHtml(primaryEmail(c))}</td><td>${escapeHtml(primaryPhone(c))}</td><td><button class="row-mail-btn ${mailStatus(c)==="sent"?"sent":""}" data-mail-id="${escapeHtml(id)}" ${!isReadyToMail(c)&&mailStatus(c)!=="sent"?"disabled":""}>${mailStatusBadge(c)}</button></td>`;
         tr.querySelector("input").addEventListener("click",e=>{e.stopPropagation();toggleSelect(id,e.target.checked)});
         const mailBtn=tr.querySelector(".row-mail-btn");mailBtn.addEventListener("click",e=>{e.stopPropagation();openMailPreview(c)});
         tr.addEventListener("click",()=>openCompany(c)); tableBody.appendChild(tr);
@@ -417,5 +420,6 @@ async function initializeApplication(){
         calculateKPIs();populateVerticalFilter();applyFilters();
     }catch(err){console.error(err);location.replace("login-new.html")}
 }
-$("logoutBtn").onclick=async()=>{await fetch("/api/logout",{method:"POST"});location.replace("login-new.html")};
+$("logoutBtn").onclick=async()=>{await fetch("/api/logout",{method:"POST", credentials:'same-origin'});history.replaceState(null,'','login-new.html');location.replace("login-new.html")};
+window.addEventListener('pageshow', event => { if (event.persisted) initializeApplication(); });
 initializeApplication();

@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOURCEBUDDY DIRECTORY Vendor & Lead Registry</title>
     <script>
-        /* The server validates the signed, HttpOnly session; this is only an early navigation guard. */
-        fetch('/api/me', { credentials: 'same-origin' }).then(async r => {
-            if (!r.ok) return window.location.replace('login-new.html');
-        }).catch(() => window.location.replace('login-new.html'));
+        const redirectToLogin = () => window.location.replace('login-new.html');
+        const verifySession = () => fetch('/api/me', { credentials: 'same-origin', cache: 'no-store' }).then(async r => {
+            if (!r.ok) return redirectToLogin();
+        }).catch(() => redirectToLogin());
+        verifySession();
+        window.addEventListener('pageshow', event => {
+            if (event.persisted) verifySession();
+        });
     </script>
 
     <link rel="stylesheet" href="style.css">
@@ -251,7 +255,7 @@
                         </div>
                     </div>
 
-                    <a href="admin.html" id="adminDashboardBtn" data-admin-only class="btn-ghost">Admin Dashboard</a>
+                    <a href="admin.html" id="adminDashboardBtn" data-admin-only class="btn-ghost" hidden>Admin Dashboard</a>
                     <button id="templateManagerBtn" class="btn-ghost"><i class="fa-solid fa-envelope-open-text"></i> Mail Templates</button>
                     <button id="startMailingBtn" class="btn-primary"><i class="fa-solid fa-paper-plane"></i> Start Mailing</button>
                     <button id="addCompanyBtn" class="btn-primary"><i class="fa-solid fa-plus"></i> Add Company</button>
@@ -281,7 +285,7 @@
                             <th>Manufacturer</th>
                             <th>Distributor</th>
                             <th>Source Buddy</th>
-                            <th>Assigned To</th>
+                            <th class="assigned-to-col">Assigned To</th>
                             <th>Main Contact</th>
                             <th>Email</th>
                             <th>Phone</th>

@@ -23,6 +23,7 @@ function publicUser(u){return {id:u.id,username:u.username,name:u.name,role:u.ro
 function validUsername(v){return typeof v==='string'&&/^[a-zA-Z0-9._-]{3,50}$/.test(v)}
 function validPassword(v){return typeof v==='string'&&v.length>=8&&v.length<=200}
 function normalizeAssignedUserId(value){if(typeof value!=='string')return null;const trimmed=value.trim();return trimmed?trimmed:null}
+function getPageRedirect(file,user){if(file==='admin.html'){if(!user)return '/login-new.html';if(user.role!=='admin')return '/index.html';return null}if(file==='index.html'){if(!user)return '/login-new.html';return null}if(file==='user.html'){if(!user)return '/login-new.html';return '/index.html'}return null}
 function companyMatchesAssignmentView(company, view, userId){const assignedUserId=normalizeAssignedUserId(company?.assigned_user_id);if(view==='available')return !assignedUserId;if(view==='assigned')return assignedUserId===userId;return true}
 function syncUserCompanyIds(db){for(const user of db.users||[]){if(user.role!=='user')continue;user.companyIds=(db.companies||[]).filter(company=>normalizeAssignedUserId(company?.assigned_user_id)===user.id).map(company=>String(company['#']))}}
 function assignCompanies(db, companyIds, assignedUserId){const normalizedUserId=normalizeAssignedUserId(assignedUserId);const known=new Set((db.companies||[]).map(company=>String(company['#'])));for(const companyId of companyIds){if(!known.has(String(companyId)))continue;const company=(db.companies||[]).find(item=>String(item['#'])===String(companyId));if(company)company.assigned_user_id=normalizedUserId}syncUserCompanyIds(db)}
@@ -54,10 +55,8 @@ async function api(req,res,url){const method=req.method, p=url.pathname, db=read
 function staticFile(req,res,url){
  let file=url.pathname==='/'?'login-new.html':url.pathname.slice(1);
  if(file==='login.html'||file==='companies.js'||file==='auth-data.json')return res.writeHead(403).end('Forbidden');
- /* Route protection happens before HTML is sent, so changing a URL cannot reveal an admin page. */
- if(file==='admin.html'){const u=user(req);if(!u)return res.writeHead(302,{Location:'/login-new.html'}).end();if(u.role!=='admin')return res.writeHead(302,{Location:'/index.html'}).end()}
- if(file==='index.html'){const u=user(req);if(!u)return res.writeHead(302,{Location:'/login-new.html'}).end()}
- if(file==='user.html'){const u=user(req);return res.writeHead(302,{Location:u?'/index.html':'/login-new.html'}).end()}
- if(!/^[\w.-]+$/.test(file))return res.writeHead(400).end('Bad request');const full=path.join(ROOT,file);if(!full.startsWith(ROOT)||!fs.existsSync(full))return res.writeHead(404).end('Not found');res.writeHead(200,{'Content-Type':MIME[path.extname(full)]||'application/octet-stream','Cache-Control':'no-cache'});fs.createReadStream(full).pipe(res)
+ const u=user(req);const redirect=getPageRedirect(file,u);
+ if(redirect)return res.writeHead(302,{Location:redirect,'Cache-Control':'no-store, no-cache, must-revalidate, max-age=0','Pragma':'no-cache','Expires':'0'}).end();
+ if(!/^[\w.-]+$/.test(file))return res.writeHead(400).end('Bad request');const full=path.join(ROOT,file);if(!full.startsWith(ROOT)||!fs.existsSync(full))return res.writeHead(404).end('Not found');const headers={'Content-Type':MIME[path.extname(full)]||'application/octet-stream','Cache-Control':'no-store, no-cache, must-revalidate, max-age=0','Pragma':'no-cache','Expires':'0'};res.writeHead(200,headers);fs.createReadStream(full).pipe(res)
 }
 http.createServer((req,res)=>{const url=new URL(req.url,`http://${req.headers.host}`);if(url.pathname.startsWith('/api/'))api(req,res,url).catch(e=>json(res,400,{error:e.message}));else staticFile(req,res,url)}).listen(PORT,()=>console.log(`SourceBuddy running at http://localhost:${PORT}`));

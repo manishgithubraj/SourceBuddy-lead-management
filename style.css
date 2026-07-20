@@ -201,6 +201,7 @@ input::placeholder{ color:var(--muted-2); }
     box-shadow:0 4px 14px rgba(0,0,0,.28);
     transition:.15s;
 }
+[data-admin-only][hidden]{display:none!important}
 .btn-ghost:hover, .btn-ghost-sm:hover{ background:rgba(13,24,38,.96); border-color:var(--amber); color:var(--amber); }
 .btn-ghost-sm{ width:auto; padding:8px 14px; }
 
