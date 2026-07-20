@@ -398,8 +398,9 @@ $("saveTemplate").onclick=()=>{
 };
 
 const filterToggle=$("filterToggle"),filterOverlay=$("filterOverlay"),closeFiltersBtn=$("closeFilters"),directoryLayout=document.querySelector(".layout");
-function closeFilters(){document.body.classList.remove("filters-open");directoryLayout?.classList.remove("filters-open");filterToggle?.setAttribute("aria-expanded","false")}
-filterToggle?.addEventListener("click",()=>{const opening=!document.body.classList.contains("filters-open");document.body.classList.toggle("filters-open",opening);directoryLayout?.classList.toggle("filters-open",opening);filterToggle.setAttribute("aria-expanded",String(opening))});
+function setFiltersOpen(open){document.body.classList.toggle("filters-open",open);directoryLayout?.classList.toggle("filters-open",open);filterToggle?.setAttribute("aria-expanded",String(open));filterOverlay?.setAttribute("aria-hidden",String(!open))}
+function closeFilters(){setFiltersOpen(false)}
+filterToggle?.addEventListener("click",()=>setFiltersOpen(!document.body.classList.contains("filters-open")));
 filterOverlay?.addEventListener("click",closeFilters);
 closeFiltersBtn?.addEventListener("click",closeFilters);
 document.addEventListener("keydown",e=>{if(e.key==="Escape"){closeDetails();closeAddModal();closeMailPreview();closeTemplateManager();closeFilters()}});
