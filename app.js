@@ -103,28 +103,68 @@ function isComplete(c){ return Boolean(clean(c["Company Name"]) && website(c) &&
 function hasValue(value, wanted){ return !wanted || (wanted==="yes" ? Boolean(clean(value)) : !clean(value)); }
 
 const MAIL_STATE_KEY="avionicsMailStateV1";
-const MAIL_TEMPLATE_KEY="avionicsMailTemplatesDay1V1";
+const MAIL_TEMPLATE_KEY="avionicsMailTemplatesCampaignV2";
+const LEGACY_MAIL_TEMPLATE_KEY="avionicsMailTemplatesDay1V1";
 const MAIL_SENDER_KEY="avionicsApprovedSenderV1";
 let approvedSender=localStorage.getItem(MAIL_SENDER_KEY)||"";
+const CAMPAIGN_STAGES=[
+    {id:"day1",label:"Day 1"},
+    {id:"day3",label:"Day 3"},
+    {id:"day7",label:"Day 7"}
+];
 const DEFAULT_TEMPLATES={
     manufacturer:{
+        day1:{
         subject:"Customer didn't complain. They just stopped calling",
         body:"{{greeting}}\n\nThere's a revenue leak most manufacturing companies never track.\n\nA customer sends an enquiry. Sourcing gets delayed but finally the quote goes out. No response.\n\nThey don't say your price was wrong. They just quietly moved the order — and slowly stopped sending enquiries.\n\nQuick question — Do you know what is the revenue lost due to delayed RFQ responses?\n\nBook a meeting to know more: https://cal.com/suhaas-idamtat-lzk0ft/let-s-connect-source-buddy\n\nAnurag Kumar\nIdamTat Technologies and Services LLP\n+91 8431910393\nwww.idamtat.in"
+        },
+        day3:{
+            subject:"How one manufacturer stopped losing orders to slow quotes",
+            body:"Hi Debbie,\n\nA manufacturer in Bengaluru — similar size to [company]— was losing time and money in two places.\n\nOne: RFQ cycles taking 10-15 days when customers expected 7.\nTwo: Two projects sourcing the same component separately, paying more than they needed to.\n\nSource Buddy fixed both.\n\nQuote cycles dropped to < 7 days. Substantial savings achieved in 3 weeks just from consolidating parts across projects.\n\nNo new headcount. No big implementation. Results in the first month.\n\nWould it make sense to show you this on a 20-minute call?\n\nBook a meeting to know more: https://cal.com/suhaas-idamtat-lzk0ft/let-s-connect-source-buddy\n\nAnurag Kumar\nIdamTat Technologies and Services LLP\n+91 8431910393\nwww.idamtat.in"
+        },
+        day7:{
+            subject:"3 months free — show your MD the numbers",
+            body:"Hi Companyperson,\n\nLast one from me — I'll keep it short.\n\nWe're offering sourcing teams 3 months of free access to Source Buddy. No fees. No commitment.\n\nRun it on your next project. Track the time saved and the cost difference. Then decide if it's worth continuing.\n\nMost managers who adopt Source Buddy improve their RQF turnaround time and win more orders.\n\nWorth a 20-minute conversation to see if it fits.\n\nBook a meeting to know more: https://cal.com/suhaas-idamtat-lzk0ft/let-s-connect-source-buddy\n\nAnurag Kumar\nIdamTat Technologies and Services LLP\n+91 8431910393\nwww.idamtat.in"
+        }
     },
     distributor:{
+        day1:{
         subject:"How much revenue did you lose to a delayed quote this week?",
         body:"{{greeting}}\n\nIn components trading, the fastest and most accurate quote wins the order.\n\nWhen a BOM lands in your inbox, how long does your team take to check stock availability, lead times, and best price — before you can even quote? That delay is costing you orders.\n\nSource Buddy is built for traders like you — to pull multi-vendor pricing fast, compare quotes side by side, and respond before your competitor even finishes checking with suppliers.\n\nWorth a 20-minute conversation?\n\nBook a meeting to know more: https://cal.com/suhaas-idamtat-lzk0ft/let-s-connect-source-buddy\n\nWarm regards,\nAnurag Kumar\nIdam TAT — Source Buddy\n+91 8431910393\nwww.idamtat.in"
+        },
+        day3:{
+            subject:"Winning the order -  but at what margin Price?",
+            body:"Hi Deborah,\n\nFollowing up on my earlier note.\n\nQuoting fast is only half the battle.\n\nWhen sourcing is done manually — checking suppliers one by one, under pressure to respond quickly — your team settles for the first available price, not the best one. Duties and landed costs get missed. And the margin you intended is not the margin you invoice.\n\nSource Buddy is built for traders like you — to evaluate stock availability, lead times, and best price simultaneously, so your team can quote fast without compromising on margin.\n\nWin the order. And win it at the right price.\n\nWorth a 20-minute conversation?\n\nBook a meeting to know more: https://cal.com/suhaas-idamtat-lzk0ft/let-s-connect-source-buddy\n\nWarm regards,\nAnurag Kumar\nIdam TAT — Source Buddy\n+91 8431910393\nwww.idamtat.in"
+        },
+        day7:{
+            subject:"Should I stop reaching out?",
+            body:"Dear Companyperson,\n\nThis is my last note I promise.\n\nTwo things cost traders revenue every day — a slow quote and a wrong price. Source Buddy's sourcing workflow solves both — multi-vendor pricing, fast comparison, accurate quote — before your competitor even responds.\n\nIf the timing is not right, no problem. Happy to reconnect when it makes sense.\n\nEither way, best of luck with the business.\n\nWorth a 20-minute conversation to see if it fits.\n\nBook a meeting to know more: https://cal.com/suhaas-idamtat-lzk0ft/let-s-connect-source-buddy\n\nAnurag Kumar\nIdamTat Technologies and Services LLP\n+91 8431910393\nwww.idamtat.in"
+        }
     }
 };
-let mailState=JSON.parse(localStorage.getItem(MAIL_STATE_KEY)||"{}");
-let mailTemplates=JSON.parse(localStorage.getItem(MAIL_TEMPLATE_KEY)||"null")||DEFAULT_TEMPLATES;
+function campaignTemplates(saved){
+    const result={};
+    Object.keys(DEFAULT_TEMPLATES).forEach(category=>{
+        result[category]={};
+        CAMPAIGN_STAGES.forEach(({id})=>{
+            const legacyDay1=saved?.[category]?.subject?saved[category]:null;
+            result[category][id]=saved?.[category]?.[id]||((id==="day1"&&legacyDay1)?legacyDay1:DEFAULT_TEMPLATES[category][id]);
+        });
+    });
+    return result;
+}
+function campaignMailState(saved){return Object.fromEntries(Object.entries(saved||{}).map(([companyId,value])=>[companyId,value?.status?{day1:value}:value]))}
+let mailState=campaignMailState(JSON.parse(localStorage.getItem(MAIL_STATE_KEY)||"{}"));
+let mailTemplates=campaignTemplates(JSON.parse(localStorage.getItem(MAIL_TEMPLATE_KEY)||localStorage.getItem(LEGACY_MAIL_TEMPLATE_KEY)||"null"));
 let mailingCompany=null;
 let mailingQueue=[];
 let mailingQueueIndex=-1;
+let mailingStage="day1";
 function saveMailState(){localStorage.setItem(MAIL_STATE_KEY,JSON.stringify(mailState))}
 function saveMailTemplates(){localStorage.setItem(MAIL_TEMPLATE_KEY,JSON.stringify(mailTemplates))}
-function mailStatus(c){if(!primaryEmail(c))return"no-email";return mailState[String(c["#"])]?.status==="sent"?"sent":"not-sent"}
-function isReadyToMail(c){return Boolean(primaryEmail(c)&&templateTypeFor(c)&&mailStatus(c)!=="sent")}
+function stageStatus(c,stage=mailingStage){return mailState[String(c["#"])]?.[stage]?.status||"not-sent"}
+function mailStatus(c){if(!primaryEmail(c))return"no-email";return stageStatus(c,"day1")==="sent"?"sent":"not-sent"}
+function isReadyToMail(c,stage="day1"){return Boolean(primaryEmail(c)&&templateTypeFor(c)&&stageStatus(c,stage)!=="sent")}
 function templateTypeFor(c){
     const m=normalizeBoolean(c["Manufacturer"])==="yes",d=normalizeBoolean(c["Distributor"])==="yes";
     if(m&&!d)return"manufacturer";
@@ -317,7 +357,13 @@ $("exportCompany").onclick=()=>selectedCompany&&downloadCsv([selectedCompany],`$
 $("deleteCompany").onclick=()=>{if(!requireAdmin()||!selectedCompany||!confirm(`Delete "${selectedCompany["Company Name"]}"? This cannot be undone.`))return;const id=selectedCompany["#"];allCompanies=allCompanies.filter(c=>c["#"]!==id);selectedIds.delete(id);closeDetails();refreshData();updateBulkBar();showToast("Company deleted")};
 
 // ================= MAIL OUTREACH WORKFLOW =================
-const mailModal=$("mailModal"),mailOverlay=$("mailOverlay"),mailContext=$("mailContext"),mailTemplateType=$("mailTemplateType"),mailTo=$("mailTo"),mailSubject=$("mailSubject"),mailBody=$("mailBody");
+const mailModal=$("mailModal"),mailOverlay=$("mailOverlay"),mailContext=$("mailContext"),mailTemplateType=$("mailTemplateType"),mailCampaignStage=$("mailCampaignStage"),mailTo=$("mailTo"),mailSubject=$("mailSubject"),mailBody=$("mailBody");
+function stageLabel(stage){return CAMPAIGN_STAGES.find(item=>item.id===stage)?.label||stage}
+function populateCampaignStageSelectors(){
+    const options=CAMPAIGN_STAGES.map(({id,label})=>`<option value="${id}">${label}</option>`).join("");
+    [mailCampaignStage,$("templateCampaignStage")].forEach(select=>{if(select)select.innerHTML=options});
+}
+populateCampaignStageSelectors();
 function openMailPreview(c,queue=null,index=-1){
     if(!primaryEmail(c)){showToast("No email available for this company");return}
     const templateType=templateTypeFor(c);
@@ -326,22 +372,25 @@ function openMailPreview(c,queue=null,index=-1){
     if(queue){mailingQueue=queue;mailingQueueIndex=index}
     const m=normalizeBoolean(c["Manufacturer"])==="yes",d=normalizeBoolean(c["Distributor"])==="yes";
     $("senderDisplay").textContent=approvedSender?`FROM CHECK: ${approvedSender}`:"Sender not configured — set it in Mail Templates";
-    mailContext.innerHTML=`<strong>${escapeHtml(c["Company Name"])}</strong><span>${m?"MANUFACTURER":""}${m&&d?" + ":""}${d?"DISTRIBUTOR":""}</span><span>${escapeHtml(primaryName(c)||"CONTACT NAME MISSING")}</span><span>${mailStatus(c)==="sent"?"ALREADY SENT":"NOT SENT"}</span>`;
+    mailContext.innerHTML=`<strong>${escapeHtml(c["Company Name"])}</strong><span>${m?"MANUFACTURER":""}${m&&d?" + ":""}${d?"DISTRIBUTOR":""}</span><span>${escapeHtml(primaryName(c)||"CONTACT NAME MISSING")}</span><span>${stageLabel(mailingStage).toUpperCase()}: ${stageStatus(c)==="sent"?"ALREADY SENT":"NOT SENT"}</span>`;
     mailTemplateType.value=templateType;
+    mailCampaignStage.value=mailingStage;
     renderPreparedTemplate();
     mailModal.classList.add("open");mailOverlay.classList.add("show");
 }
 function renderPreparedTemplate(){
     if(!mailingCompany)return;
     const templateType=templateTypeFor(mailingCompany);
-    const t=mailTemplates[templateType]||DEFAULT_TEMPLATES[templateType];
+    const t=mailTemplates[templateType]?.[mailingStage]||DEFAULT_TEMPLATES[templateType]?.[mailingStage];
     mailTemplateType.value=templateType;
+    mailCampaignStage.value=mailingStage;
     mailTo.value=primaryEmail(mailingCompany);
     mailSubject.value=fillTemplate(t.subject,mailingCompany);
     mailBody.value=fillTemplate(t.body,mailingCompany);
 }
 function closeMailPreview(){mailModal.classList.remove("open");mailOverlay.classList.remove("show")}
 $("closeMailModal").onclick=closeMailPreview;mailOverlay.onclick=closeMailPreview;
+mailCampaignStage.onchange=()=>{mailingStage=mailCampaignStage.value;renderPreparedTemplate();if(mailingCompany){const status=mailContext.querySelector("span:last-child");if(status)status.textContent=`${stageLabel(mailingStage).toUpperCase()}: ${stageStatus(mailingCompany)==="sent"?"ALREADY SENT":"NOT SENT"}`}};
 $("mailCompany").onclick=()=>selectedCompany&&openMailPreview(selectedCompany);
 $("copyPreparedMail").onclick=async()=>{await navigator.clipboard.writeText(`Subject: ${mailSubject.value}\n\n${mailBody.value}`);showToast("Prepared message copied")};
 $("openMailComposer").onclick=()=>{
@@ -353,48 +402,55 @@ $("openMailComposer").onclick=()=>{
 
 $("markNotSent").onclick=()=>{
     if(!mailingCompany)return;
-    delete mailState[String(mailingCompany["#"])];
+    if(mailState[String(mailingCompany["#"])])delete mailState[String(mailingCompany["#"])][mailingStage];
     saveMailState();renderTable();
-    mailContext.querySelector("span:last-child").textContent="NOT SENT";
+    mailContext.querySelector("span:last-child").textContent=`${stageLabel(mailingStage).toUpperCase()}: NOT SENT`;
     showToast("Marked as not sent");
 };
 
 $("markSentNext").onclick=()=>{
     if(!mailingCompany)return;
-    mailState[String(mailingCompany["#"])]={status:"sent",sentAt:new Date().toISOString()};
+    const companyId=String(mailingCompany["#"]);
+    mailState[companyId]??={};
+    mailState[companyId][mailingStage]={status:"sent",sentAt:new Date().toISOString()};
     saveMailState();showToast("Marked as sent");renderTable();
     if(mailingQueue.length){
         let next=mailingQueueIndex+1;
-        while(next<mailingQueue.length&&mailStatus(mailingQueue[next])==="sent")next++;
+        while(next<mailingQueue.length&&stageStatus(mailingQueue[next],mailingStage)==="sent")next++;
         if(next<mailingQueue.length){mailingQueueIndex=next;openMailPreview(mailingQueue[next],mailingQueue,next);return}
         showToast("Mailing queue completed");
     }
     closeMailPreview();
 };
 $("startMailingBtn").onclick=()=>{
-    const queue=filteredCompanies.filter(isReadyToMail);
+    mailingStage="day1"; // Preserve the existing Start Mailing behaviour as the Day 1 campaign.
+    const queue=filteredCompanies.filter(company=>isReadyToMail(company,mailingStage));
     if(!queue.length){showToast("No ready-to-mail companies in the current view");return}
     mailingQueue=queue;mailingQueueIndex=0;openMailPreview(queue[0],queue,0);
 };
 
 // Template manager
-const templateModal=$("templateModal"),templateOverlay=$("templateOverlay"),templateSubject=$("templateSubject"),templateBody=$("templateBody"),senderEmail=$("senderEmail");
+const templateModal=$("templateModal"),templateOverlay=$("templateOverlay"),templateCampaignStage=$("templateCampaignStage"),templateSubject=$("templateSubject"),templateBody=$("templateBody"),senderEmail=$("senderEmail");
 let editingTemplate="manufacturer";
-function loadTemplateEditor(type){
+let editingStage="day1";
+function loadTemplateEditor(type,stage=editingStage){
     editingTemplate=type;
+    editingStage=stage;
     document.querySelectorAll(".template-tab").forEach(b=>b.classList.toggle("active",b.dataset.templateTab===type));
-    const t=mailTemplates[type]||DEFAULT_TEMPLATES[type];templateSubject.value=t.subject;templateBody.value=t.body;
+    templateCampaignStage.value=stage;
+    const t=mailTemplates[type]?.[stage]||DEFAULT_TEMPLATES[type]?.[stage];templateSubject.value=t.subject;templateBody.value=t.body;
 }
-$("templateManagerBtn").onclick=()=>{senderEmail.value=approvedSender;loadTemplateEditor("manufacturer");templateModal.classList.add("open");templateOverlay.classList.add("show")};
+$("templateManagerBtn").onclick=()=>{senderEmail.value=approvedSender;loadTemplateEditor("manufacturer","day1");templateModal.classList.add("open");templateOverlay.classList.add("show")};
 function closeTemplateManager(){templateModal.classList.remove("open");templateOverlay.classList.remove("show")}
 $("closeTemplateModal").onclick=closeTemplateManager;templateOverlay.onclick=closeTemplateManager;
-document.querySelectorAll(".template-tab").forEach(b=>b.onclick=()=>loadTemplateEditor(b.dataset.templateTab));
+document.querySelectorAll(".template-tab").forEach(b=>b.onclick=()=>loadTemplateEditor(b.dataset.templateTab,editingStage));
+templateCampaignStage.onchange=()=>loadTemplateEditor(editingTemplate,templateCampaignStage.value);
 $("saveTemplate").onclick=()=>{
     const sender=senderEmail.value.trim();
     if(sender&&!validEmail(sender)){showToast("Enter a valid approved sender email");return}
     approvedSender=sender;localStorage.setItem(MAIL_SENDER_KEY,approvedSender);
-    mailTemplates[editingTemplate]={subject:templateSubject.value,body:templateBody.value};
-    saveMailTemplates();showToast(`${editingTemplate==="manufacturer"?"Manufacturer":"Distributor"} template and sender setting saved`);
+    mailTemplates[editingTemplate][editingStage]={subject:templateSubject.value,body:templateBody.value};
+    saveMailTemplates();showToast(`${editingTemplate==="manufacturer"?"Manufacturer":"Distributor"} ${stageLabel(editingStage)} template and sender setting saved`);
 };
 
 const filterToggle=$("filterToggle"),filterOverlay=$("filterOverlay"),closeFiltersBtn=$("closeFilters"),directoryLayout=document.querySelector(".layout");
